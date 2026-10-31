@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eee9ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #5945a5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+button {
+    padding: 12px 15px;
+    background: #7158cf;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5945a5;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    background: #f4f1ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background: #e65c70;
+    padding: 7px 10px;
+}
+
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #5945a5;
+}
+
+.task-stats div {
+    background: #eee9ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.edit-btn {
+    background: #28a879;
+    padding: 7px 10px;
+}
+
+.edit-btn:hover {
+    background: #187b59;
+}
+
+#clearAllBtn {
+    width: 100%;
+    margin-top: 15px;
+    background: #e65c70;
+    font-size: 14px;
+}
+
+#clearAllBtn:hover {
+    background: #c93650;
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 94%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .input-section {
+        gap: 6px;
+    }
+
+    .input-section button {
+        padding: 10px;
+    }
+
+    .task-stats {
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .task-stats div {
+        padding: 8px 5px;
+    }
+
+    li {
+        gap: 6px;
+        font-size: 13px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        padding: 7px;
+        font-size: 12px;
+    }
+}
